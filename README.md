@@ -1,4 +1,7 @@
-# vue-cli
+# vue-cli - example of communication between components (Section 8)
+
+Home task, which was made on course https://academind.com/
+
 
 > A Vue.js project
 
