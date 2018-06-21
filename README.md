@@ -1,5 +1,5 @@
-# vue-cli: example of directives (Section 12)
-Home task, which made on course https://academind.com/
+# vue-cli-example of components (Section 9)
+Home task, which was made on course https://academind.com/
 
 > A Vue.js project
 
@@ -16,3 +16,4 @@ npm run dev
 npm run build
 ```
 
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
