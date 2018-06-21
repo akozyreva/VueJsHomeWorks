@@ -1,5 +1,5 @@
 # vue-cli: example of directives (Section 12)
-Home task, which made on course https://academind.com/
+Home task,  which made on course https://academind.com/
 
 > A Vue.js project
 
