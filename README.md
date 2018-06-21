@@ -1,4 +1,5 @@
-# vue-cli
+#vue-cli: example of forms (Section 11)
+Home task, which made on course https://academind.com/
 
 > A Vue.js project
 
