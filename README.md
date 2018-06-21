@@ -1,6 +1,9 @@
-# vue-cli: example of directives (Section 12)
-Home task, which made on course https://academind.com/
-
+# vue-cli
+This is my repository with home works of course of VueJs.
+Every branch - every task.
+Url of cousre = https://academind.com/
+Also I use stylus and pug in .vue files.
+ 
 > A Vue.js project
 
 ## Build Setup
@@ -15,4 +18,5 @@ npm run dev
 # build for production with minification
 npm run build
 ```
+
 
