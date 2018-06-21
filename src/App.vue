@@ -1,28 +1,32 @@
 <template>
     <div class="container">
-        <app-header></app-header>
-        <hr>
         <div class="row">
-            <servers></servers>
-            <app-server-details></app-server-details>
+            <div class="col-xs-12">
+                <header>
+                    <h1>Server Status</h1>
+                </header>
+            </div>
         </div>
         <hr>
-        <app-footer></app-footer>
+        <div class="row">
+            <server></server>
+            <serverStatus></serverStatus>
+        </div>
+        <hr>
+        <footerText></footerText>
     </div>
 </template>
 
 <script>
-    import Header from './components/Shared/Header.vue';
-    import Footer from './components/Shared/Footer.vue';
-    import Servers from './components/Server/Servers.vue';
-    import ServerDetails from './components/Server/ServerDetails.vue';
-
+    import Server from './Server.vue';
+    import ServerDetails from './ServerDetails.vue'
+    import Footer from './Footer.vue'
     export default {
         components: {
-            appHeader: Header,
-            Servers,
-            'app-server-details': ServerDetails,
-            'app-footer': Footer
+            //have locally access
+            'server': Server,
+            'serverStatus': ServerDetails,
+            'footerText': Footer
         }
     }
 </script>

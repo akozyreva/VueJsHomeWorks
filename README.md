@@ -1,4 +1,5 @@
-# vue-cli
+# vue-cli - example of components (Section 7)
+Home task, which made on course https://academind.com/
 
 > A Vue.js project
 
