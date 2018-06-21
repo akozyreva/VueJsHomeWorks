@@ -1,4 +1,4 @@
-# vue-cli: example of directives
+# vue-cli: example of directives (Section 12)
 Home task, which made on course https://academind.com/
 
 > A Vue.js project
