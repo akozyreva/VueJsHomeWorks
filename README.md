@@ -1,9 +1,7 @@
-# vue-cli
-This is my repository with home works of course of VueJs.
-Every branch - every task.
-Url of cousre = https://academind.com/
-Also I use stylus and pug in .vue files.
- 
+# vue-cli - example of filters and mixins (Section 13)
+
+Home task, which was made on course https://academind.com/
+
 > A Vue.js project
 
 ## Build Setup
@@ -19,4 +17,4 @@ npm run dev
 npm run build
 ```
 
-
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

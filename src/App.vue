@@ -1,38 +1,47 @@
 <template lang="pug">
-    .container
-        .row.main
-            .col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
-            h1.red Direcitve
-            <button v-myDirective:click="counted"> +1 </button>
-            p {{ counter }}        
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <h1>Filters & Mixins - Home Task</h1>
+                <!-- Exercise 1) -->
+                <!-- Build a local Filter which reverses the Text it is applied on -->
+                p {{ text | reversed }}
+
+                <!-- Exercise 2 -->
+                <!-- Build a global Filter which counts the length of a word and it appends it -->
+                <!-- Like this: "Test" => Gets Filtered to => "Test (4)" -->
+                p {{ text | text-length }}
+
+                <!-- Exercise 3 -->
+                <!-- Do the same as in Exercises 1 & 2, now with Computed Properties -->
+                p {{ reservedComputed }}
+                p {{ lowLen }}
+
+                <!-- Exercise 4 -->
+                <!-- Share the Computed Property rebuilding Exercise 2 via a Mixin -->
+
+
+            </div>
+        </div>
+    </div>
 </template>
+
 <script>
-export default {
-    data() {
-        return {
-            counter: 0
-        }
-    },
-    directives: {
-        myDirective: {
-            bind(el, binding, vnode) {
-                let type = binding.arg;
-                let myFunction = binding.value;
-                console.log(type, myFunction)
-                el.addEventListener(type, myFunction);
+    import {computedMixin} from './computedMixin';
+    export default {
+        mixins: [computedMixin],
+        data() {
+            return {
+                text: 'world'
+            }
+        }, 
+        filters: {
+            reversed(val) {
+                return val.split("").reverse().join("");
             }
         }
-    },
-    methods: {
-        counted() {
-            return this.counter++;
-        }
     }
-}
 </script>
-<style lang="stylus">
-.main
-    background-color green
-    .red
-        color red
+
+<style>
 </style>
